@@ -1,1 +1,0 @@
-$ cd '/c/Users/User.DESKTOP-RT4P2IR/OneDrive/Escritorio/UTN/E-LEARNING/DIPLOMATURA FULLSTACK/Proyectos Git/privado.txt'
