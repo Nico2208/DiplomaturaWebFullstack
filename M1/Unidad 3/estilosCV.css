@@ -6,3 +6,7 @@
 #hola{
     background-color: blanchedalmond;
 }
+
+a:hover{
+    color: cadetblue;
+}
