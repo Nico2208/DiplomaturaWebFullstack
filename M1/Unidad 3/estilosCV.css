@@ -1,12 +1,25 @@
+#foto{
+    width: 150px;
+    height: 150px;
+    margin-left: 120px;
+    margin-right: 120px;
+    border: 5px solid black;
+}
 
 .academic{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center; 
 }
 
-#hola{
+.hola{
     background-color: blanchedalmond;
 }
+
+.hola:hover{
+    background-color: aquamarine;
+}
+
+
 
 a:hover{
     color: cadetblue;
