@@ -19,6 +19,28 @@
     background-color: aquamarine;
 }
 
+.caja-azul{
+    text-align: center;
+    width: 150px;
+    height: 30px;
+    background-color: cadetblue;
+    padding: 5px;
+    border: 5px solid black;
+    margin-left: 750px;
+}
+
+.caja-verde{
+    text-align: center;
+    background-color: chartreuse;
+    border: 5px solid black;
+    width: 150px;
+    height: 220px;
+    margin-left: 750px;
+}
+
+.caja-verde:hover{
+    background-color: burlywood;
+}
 
 
 a:hover{
