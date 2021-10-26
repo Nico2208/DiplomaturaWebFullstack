@@ -1,0 +1,38 @@
+.caja{
+    background: rgb(208,228,247); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(208,228,247,1) 24%, rgba(135,188,234,1) 32%, rgba(135,188,234,1) 32%, rgba(83,159,225,1) 55%, rgba(10,119,213,1) 56%, rgba(115,177,231,1) 71%, rgba(115,177,231,1) 71%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(208,228,247,1) 24%,rgba(135,188,234,1) 32%,rgba(135,188,234,1) 32%,rgba(83,159,225,1) 55%,rgba(10,119,213,1) 56%,rgba(115,177,231,1) 71%,rgba(115,177,231,1) 71%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(208,228,247,1) 24%,rgba(135,188,234,1) 32%,rgba(135,188,234,1) 32%,rgba(83,159,225,1) 55%,rgba(10,119,213,1) 56%,rgba(115,177,231,1) 71%,rgba(115,177,231,1) 71%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d0e4f7', endColorstr='#73b1e7',GradientType=1 );
+height: 200px;
+width: 200px;
+padding: 5px;
+border-radius: 25px;
+box-shadow: 15px 15px 25px black;
+font-family: 'Encode Sans', sans-serif;
+margin-bottom: 50px;
+text-align: center;
+}
+
+.fuentes h2{
+    font-family: 'Volkhov', serif;
+}
+
+.fuentes p{
+    font-family: 'Encode Sans', sans-serif;
+}
+
+.fuentes{
+    height: 250px;
+    width: 250px;
+    background-color: coral;
+    padding: 15px;
+    border-radius: 25px 0;
+    box-shadow: -10px -15px 25px black;
+    text-align: center;
+}
+
+.fuentes i{
+    color: blueviolet;
+    font-size: 25px;
+}
