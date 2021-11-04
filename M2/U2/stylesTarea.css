@@ -1,0 +1,23 @@
+.Contenedor{
+    
+    border-color: black;
+    border-width: 50px;
+    
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+}
+
+#Rojo {
+    background-color: red;
+}
+
+#Azul {
+    background-color: blue;
+}
+
+#Verde {
+    background-color: green;
+}
