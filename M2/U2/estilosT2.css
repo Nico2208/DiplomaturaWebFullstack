@@ -1,11 +1,11 @@
 .Contenedor{
     background-color: white;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border: 2px solid black;
     display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
 .item{
