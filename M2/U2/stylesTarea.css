@@ -1,13 +1,14 @@
 .Contenedor{
-    
-    border-color: black;
-    border-width: 50px;
-    
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
 }
 
 .item{
     height: 100px;
     width: 100px;
+    font-size: 30px;
+    
 }
 
 #Rojo {
