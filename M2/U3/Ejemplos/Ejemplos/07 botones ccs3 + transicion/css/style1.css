@@ -2,48 +2,55 @@
     transition: all 0.8s linear;
 }
 
-.view-first:hover img {
+.view-first:hover img { /*La imagen se agranda
+   1.1 veces*/
   
-   transform: scale(2,2);
+   transform: scale(1.1,1.1);
 }
 
-.view-first .mask {
+.view-first .mask { /*Filtro naranja que aparece
+   al apoyar el cursor sobre la imagen*/
    filter: alpha(opacity=0);
    opacity: 0;
    background-color: rgba(219,127,8, 0.7);
-   transition: all 0.4s ease-in-out;
-}
-.view-first h2 {
-
-   transform: translateY(-100px);
-
-   filter: alpha(opacity=0);
-   opacity: 0;
- 
-   transition: all 0.2s ease-in-out;
-}
-.view-first p {
-   
-   transform: translateY(100px);
-
-   filter: alpha(opacity=0);
-   opacity: 0;
- 
-   transition: all 0.2s linear;
+   transition: all 0.5s ease-in-out;
 }
 
-.view-first a.info {
-  
-   filter: alpha(opacity=0);
-   opacity: 0;
-
-   transition: all 0.2s ease-in-out;
-}
 .view-first:hover .mask {
   
    filter: alpha(opacity=100);
    opacity: 1;
 }
+
+.view-first h2 {
+
+   transform: translateY(-100px); 
+   /*H2 aparece desde arriba*/
+   filter: alpha(opacity=0);
+   opacity: 0;
+ 
+   transition: all 0.5s ease-in-out;
+}
+.view-first p {
+   
+   transform: translateY(100px);
+   /*Parrafo viene desde abajo*/
+   filter: alpha(opacity=0);
+   opacity: 0;
+ 
+   transition: all 0.5s linear;
+}
+
+.view-first a.info {
+  
+   transform: translateX(100px);
+   /*More info aparece desde la derecha*/
+   filter: alpha(opacity=0);
+   opacity: 0;
+
+   transition: all 0.5s ease-in-out ;
+}
+
 .view-first:hover h2,
 .view-first:hover p,
 .view-first:hover a.info {
@@ -51,14 +58,14 @@
    filter: alpha(opacity=100);
    opacity: 1;
  
-   transform: translateY(0px);
+   transform: translateX(0px);
 }
 .view-first:hover p {
 
-   transition-delay: 0.1s;
+   transition-delay: 0.5s;
 }
 .view-first:hover a.info {
 
-   transition-delay: 0.2s;
+   transition-delay: 0.5s;
 }
 				
