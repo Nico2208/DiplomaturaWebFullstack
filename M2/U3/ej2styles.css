@@ -32,7 +32,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s ease-in-out 0.5s;
+    opacity: 0;
+    transition: all 0.8s ease-in-out 0.5s;
 }
 
 .puerto p{
@@ -40,8 +41,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.5s ease-in-out 0.5s ;
-}
-.puerto h2:hover, .puerto p:hover{
     opacity: 0;
+    transition: all 0.8s ease-in-out 0.5s ;
+}
+
+
+.puerto:hover h2, .puerto:hover p{
+    opacity: 1;
 }
