@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+}
+.box {
+    height: 500px;
+    width: auto;
+    background-color: azure;
+    border: solid black 5px;
+    font-size: larger;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
