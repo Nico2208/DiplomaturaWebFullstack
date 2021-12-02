@@ -13,18 +13,23 @@ body {
 	width: auto;
 	background: #8FA68E;
 	overflow: hidden;
+    padding-bottom: auto;
+    margin: 0px;
     
 }
 
 #contenedor h1 {
     width: auto;
     background: #8FA68E;
+    padding-bottom: 15px;
 }
 
 nav {
 	background-color: rgb(211, 182, 107);
 	float: none;
     width: auto;
+    padding: 1px;
+    border-bottom: solid black 1px;
 }
 ul {
 	list-style-type:none;
@@ -36,17 +41,18 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    padding: 10px;
+    padding: 5px;
 }
 section {
 	background: #F1F2C0;
 	float: none;
 	width: auto;
-    padding: 0px;
+    padding: 30px;
+    border-bottom: solid black 1px;
 }
 aside {
 	background: #CCC59E;
 	float: none;
 	width: auto;
-    padding: 0px;
+    padding: 30px;
 }
