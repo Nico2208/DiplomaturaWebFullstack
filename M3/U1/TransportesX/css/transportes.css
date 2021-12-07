@@ -165,3 +165,34 @@ h2{
 .persona:first-child{
     margin-left: 0;
 }
+
+.servicio .info h4{
+    color:#2e64a1;
+    font-size: 1.2em;
+    font-style: italic;
+    font-weight: 500;
+    margin: 0 0 1em;
+    border-bottom: 1px solid #2e64a1;
+}
+
+.servicio .info p{
+    font-size: 0.8em;
+    line-height: 1.2em;
+}
+
+.servicio img{
+    border-radius: 0.8em;
+}
+
+.servicio:nth-child(even) img{
+    float: left;
+}
+
+.servicio:nth-child(odd) img{
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.servicio:nth-child(odd) .info{
+    float: right;
+}
