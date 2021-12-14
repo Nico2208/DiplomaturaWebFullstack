@@ -3,7 +3,9 @@
 
 /* Crear el código que reciba como parámetro un array de números y devuelva el mayor. */
 
-// FUNCIONES
+/* FUNCIONES: la primera funcion permite que el usuario cargue los elementos del array,
+mientras que la segunda funcion determina cual es el mayor elemento del array 
+*/
 
 function cargarArray (array, elemArray) {
     for (let i = 0; i < elemArray; i ++){
