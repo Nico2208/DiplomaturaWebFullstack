@@ -10,6 +10,9 @@
 
 +100000 = avion*/
 
+
+//FUNCION QUE EVALÚA QUÉ MEDIO TRANSPORTE CORRESPONDE A CADA DISTANCIA INGRESA  
+
 function determinarMdeTransporte (distancia){
     if (distancia <= 1000){
       console.log('Medio de transporte: pie');
@@ -33,7 +36,7 @@ function determinarMdeTransporte (distancia){
     }
   }
   
-  distAEvaluar = parseInt(prompt('Por favor, ingrese distancia a evaluar: '));
+  distAEvaluar = parseInt(prompt('Por favor, ingrese distancia a evaluar: ')); 
   
   determinarMdeTransporte (distAEvaluar);
 
