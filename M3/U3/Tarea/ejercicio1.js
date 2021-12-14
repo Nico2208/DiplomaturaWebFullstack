@@ -10,28 +10,3 @@
 
 +100000 = avion*/
 
-function determinarMdeTransporte (distancia){
-    switch (distancia) {
-        case distancia <= 1000:
-            console.log('Medio de transporte: pie');
-            break;
-        case (distancia > 1000 && distancia <= 10000):
-            console.log('Medio de transporte: bicicleta');
-            break;
-        case (distancia > 10000 && distancia <= 30000):
-            console.log('Medio de transporte: colectivo');
-            break;    
-        case (distancia > 30000 && distancia <= 100000):
-            console.log('Medios de transporte: auto');
-            break;
-        case distancia > 100000:
-            console.log('Medio de transporte: avion');
-            break;
-        default:
-            break;
-    }
-}
-
-let distancia = prompt('Indique una distancia a evaluar: ');
-
-determinarMdeTransporte(distancia);
