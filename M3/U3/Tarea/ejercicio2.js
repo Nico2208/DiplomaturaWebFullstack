@@ -10,7 +10,7 @@ mientras que la segunda funcion determina cual es el mayor elemento del array
 function cargarArray (array, elemArray) {
     for (let i = 0; i < elemArray; i ++){
       let num = parseInt(prompt('Ingrese valor ', i+1));
-      array[i] = num;
+      array.push(num);
     }
   }
   
@@ -25,10 +25,9 @@ function cargarArray (array, elemArray) {
 
 // FIN FUNCIONES
 
+let vector = [];
+
 cantElemArray = parseInt(prompt("Ingrese cantidad de elementos del array: "));
-
-let vector = [cantElemArray]
-
 
 cargarArray(vector, cantElemArray);
 
