@@ -14,9 +14,9 @@ function cargarArray (array, elemArray) {
     }
   }
   
-  function devolverMayor (array, elemArray) {
+  function devolverMayor (array) {
     let mayor = 0;
-    for (let i = 0; i < elemArray; i ++){
+    for (let i = 0; i < array.length; i ++){
       if(array[i]>mayor)
         mayor = array[i];
     }
