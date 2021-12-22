@@ -1,0 +1,51 @@
+.contenedor {
+    width: 600px;
+    height: 400px;
+    border: solid black 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid black 2px;
+    margin: 50px;
+}
+
+#caja1{
+    background-color: aquamarine;
+    transition: all 0.3s ease;
+}
+
+#caja1:hover{
+    transform: scale(1.2, 1.2);
+    box-shadow: 1px 1px 5px black;
+}
+
+#caja2{
+    background-color: salmon;
+    transition: all 0.3s ease;
+}
+
+#caja2:hover{
+    transform: scale(1.2, 1.2);
+    box-shadow: 1px 1px 5px black;
+}
+
+
+#caja3{
+    background-color: burlywood;
+    transition: all 0.3s ease;
+}
+
+#caja3:hover{
+    transform: scale(1.2, 1.2);
+    box-shadow: 1px 1px 5px black;
+}
