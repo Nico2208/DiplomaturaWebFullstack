@@ -13,7 +13,7 @@
 </head>
 <body>
     <div class="contenedor">
-        <div id="caja1" class="caja" >Caja 1</div>
+        <div class="caja" id="caja1" >Caja 1</div>
         <div class="caja" id="caja2">Caja 2</div>
         <div class="caja" id="caja3">Caja 3</div>
         <script>
@@ -25,9 +25,10 @@
             caja.addEventListener('click', function(e){
                 e.preventDefault();
                 var contenido = document.getElementsByClassName('contenedor')[0];
-                if(contenido.style.backgroundColor == 'white')
+                if(contenido.style.backgroundColor != 'aquamarine')
                     contenido.style = 'background-color: aquamarine';
-                else contenido.style = 'background-color: white';
+                else
+                contenido.style = 'background-color: white';
             }, false);
 
             //Caja 2
@@ -37,9 +38,10 @@
             caja.addEventListener('click', function(e){
                 e.preventDefault();
                 var contenido = document.getElementsByClassName('contenedor')[0];
-                if(contenido.style.backgroundColor == 'white')
+                if(contenido.style.backgroundColor != 'salmon')
                     contenido.style = 'background-color: salmon';
-                else contenido.style = 'background-color: white';
+                else if (contenido.style.backgroundColor == 'salmon'){
+                    contenido.style = 'background-color: white';}
             }, false);
 
             //Caja 3
@@ -49,9 +51,10 @@
             caja.addEventListener('click', function(e){
                 e.preventDefault();
                 var contenido = document.getElementsByClassName('contenedor')[0];
-                if(contenido.style.backgroundColor == 'white')
+                if(contenido.style.backgroundColor != 'burlywood')
                     contenido.style = 'background-color: burlywood';
-                else contenido.style = 'background-color: white';
+                else if(contenido.style.backgroundColor == 'burlywood'){
+                    contenido.style = 'background-color: white';}
             }, false);
 
         </script>
