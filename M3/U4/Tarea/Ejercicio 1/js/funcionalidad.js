@@ -1,1 +1,9 @@
-var caja1 = document.getElementById("caja1");
+var caja = document.getElementById('caja1');
+
+
+caja.addEventListener('click', function(e){
+    e.preventDefault();
+    alert('hola');
+}, false);
+
+
