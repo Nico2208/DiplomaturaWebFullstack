@@ -53,13 +53,9 @@ var alumnos = [
 
 ];
 
-for (var i = 0; i < alumnos.length; i++){
-    if(alumnos[i].nota >= 7){
-        document.write(alumnos[i].nombre + " aprobó");
-        document.write('<br>');
-    } else { 
-        document.write(alumnos[i].nombre + " no aprobó.");
-        document.write('<br>');
-    }
+var aprobados = alumnos.filter(alumno => alumno.nota >= 7)
 
+for (var i = 0; i < aprobados.length; i++){
+  document.write(aprobados[i].nombre + ' aprobó.');
+  document.write('<br>')
 }
