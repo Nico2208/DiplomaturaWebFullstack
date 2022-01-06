@@ -2,7 +2,13 @@ import React from "react";
 
 const Header = (props) => {
     return (
-        <div>Header aguante el rockanroll</div>
+        <header>
+        <div className="holder">
+            <img src="img/logo.png" width="100" alt="Logo de Transportes X"/>
+            <h1>Transportes X</h1>
+        </div>
+        
+    </header>
     );
 }
 
