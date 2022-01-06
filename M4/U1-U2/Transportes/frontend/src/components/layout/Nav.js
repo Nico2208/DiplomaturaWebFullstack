@@ -1,16 +1,17 @@
 import React from "react";
+import NavLink from "../NavLink";
 
 const Nav = (props) => {
     return (
         <nav>
-            <div class="holder">
+            <div className="holder">
                 <ul>
-                    <li><a class="activo" href="index.html">Home</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><NavLink activeClassName="activo" exact to="/home">Home</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/nosotros">Nosotros</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/servicios">Servicios</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/galeria">Galeria</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/novedades">Novedades</NavLink></li>
+                    <li><NavLink activeClassName="activo" exact to="/contacto">Contacto</NavLink></li>
                 </ul>
             </div>
         </nav>
