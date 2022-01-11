@@ -1,4 +1,5 @@
 import react from "react";
+import '../styles/components/pages/Nosotros.css';
 
 const Nosotros = (props) => {
     return(
