@@ -6,7 +6,7 @@ import {
 
 const NavLink = ({children, to, activeClassName, className, ...props}) => {
     let resolved = useResolvedPath(to);
-    let match = useMatch({path: resolved.pathname, end:true});
+    let match = useMatch({path: resolved.pathname, end: true});
     return (
         <div>
             <Link
