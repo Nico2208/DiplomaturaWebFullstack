@@ -16,6 +16,11 @@ function App() {
     <div className="App">
       <Header></Header>
       <Nav></Nav>
+      <HomePage></HomePage>
+      <Contacto></Contacto>
+      <Servicios></Servicios>
+      <Galeria></Galeria>
+      <Novedades></Novedades>
       <Footer></Footer>
       
     </div>
