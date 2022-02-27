@@ -16,7 +16,7 @@ const EjemploProps02 = props => {
     );
 };
 
-const EjemploProps03 = ({titulo, texto}) => {
+const EjemploProps03 = ({titulo, texto}) => { //Este ejemplo es parecido a cuando tengamos que traer datos de la base de datos. Titulo y texto armado en json
 
     return (
         <div>
