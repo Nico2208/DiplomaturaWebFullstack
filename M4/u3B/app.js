@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 
-var nosotrosRouter = require('./routes/nosotros'); 
+var nosotrosRouter = require('./routes/nosotros'); //Modulo de direccionador de nosotros.js
 
 var app = express();
 
@@ -22,15 +22,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('/respuesta', function(req, res, next){ //EJEMPLO DE RUTA SIMPLE
-  res.send('Soy una pagina de respuesta');
+app.get('/respuesta', function(req, res, next){ //EJEMPLO DE RUTA SIMPLE: se muestra una DEFINICION DE RUTA
+  res.send('Soy una pagina de respuesta');//Funcion callback
 });
 
 
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/nosotros', nosotrosRouter);
+app.use('/nosotros', nosotrosRouter); //Modulo de direccionador de nosotros.js
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
