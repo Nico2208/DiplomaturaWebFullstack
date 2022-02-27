@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.get('/respuesta', function(req, res, next){
+app.get('/respuesta', function(req, res, next){ //EJEMPLO DE RUTA SIMPLE
   res.send('Soy una pagina de respuesta');
 });
 
