@@ -27,9 +27,45 @@ app.use('/users', usersRouter);
 
 //SELECT
 
-pool.query("select * from empleados").then(function(resultados){
+// pool.query('select * from empleados').then(function(resultados){
+//   console.log(resultados);
+// })
+
+//INSERT
+
+// var obj = {
+//   nombre: 'xuxita',
+//   apellido: 'xuxitamon',
+//   trabajo: 'la jefa',
+//   edad: 27,
+//   celular: 9000000,
+//   mail: 'bokita@gmail.com'
+// }
+
+// pool.query('insert into empleados set ?', [obj]).then(function(resultados){
+//   console.log(resultados);
+// });
+
+//UPDATE
+
+// var id = 1;
+// var obj = {
+//   nombre: 'xuxita',
+//   apellido: 'tiranobebu'
+// }
+
+// pool.query('update empleados set ? where id_emp=?', [obj, id]).then(function(resultados){
+//   console.log(resultados);
+// })
+
+//DELETE
+
+var id = 5;
+
+pool.query('delete from empleados where id_emp = ?', [id]).then(function(resultados){
   console.log(resultados);
 })
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
