@@ -36,10 +36,16 @@ app.get('/', function(req, res) {
   });
 });
 
-app.post('/ingresar', function(req, res) {
+app.post('/ingresar', function(req, res) { //aca recibo la informacion mandada a traves del formulario
+//del index. req.body.nombre es el nombre que envio desde el formulario y lo almaceno en una variable de sesion
   if (req.body.nombre) {
     req.session.nombre = req.body.nombre
   }
+  res.redirect('/'); //redireccion y ahi si tengo la variable conocido
+})
+
+app.get('/salir', function (req, res) {
+  req.session.destroy();
   res.redirect('/');
 })
 

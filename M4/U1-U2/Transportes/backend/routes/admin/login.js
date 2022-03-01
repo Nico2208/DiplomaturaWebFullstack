@@ -4,7 +4,7 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('admin/login', {
-      layout: 'admin/layout'
+      layout: 'admin/layout' //Indicamos como layout un layout distinto al principal
   });
 });
 

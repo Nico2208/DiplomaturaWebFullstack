@@ -7,6 +7,8 @@
     <p>No te conozco</p>
     <form action="/ingresar" method="post">
         <input type="text" name="nombre"><button>Ingresar</button>
+        {{!-- la informacion del formulario viaja con el atributo name y se almacena en req.body.nombre --}}
         {{!-- con el boton guardo la variable nombre que viaja y queda almacenada como variable de sesion --}}
+        {{!-- paso la informacion con el name nombre y se almacena en una variable de sesion --}}
     </form>
 {{/unless}}
