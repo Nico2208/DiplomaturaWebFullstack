@@ -11,6 +11,7 @@ var usuariosModel = require('./models/usuariosModel');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var loginRouter = require('./routes/admin/login');
+var novedadesRouter = require('./routes/admin/novedades');
 
 var app = express();
 
@@ -27,6 +28,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);
+app.use('/admin/novedades', novedadesRouter);
+
+// app.use('/models/db', pool);
+// app.use('/models/usuariosModel', usuariosModel);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
