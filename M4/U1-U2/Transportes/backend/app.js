@@ -6,6 +6,7 @@ var logger = require('morgan');
 
 require('dotenv').config();
 var pool = require('./models/db');
+var usuariosModel = require('./models/usuariosModel');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
