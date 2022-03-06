@@ -44,7 +44,6 @@ secured = async(req, res, next) => {
   }
 }
 
-
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/admin/login', loginRouter);

@@ -9,7 +9,8 @@ router.get('/', function(req, res, next) {
   });
 });
 
-router.post('/', async (req, res, next) => {
+router.post('/', async (req, res, next) => { //Controlador necesario
+  //para capturar los datos enviados por el formulario de login.hbs
   try {
     var usuario = req.body.usuario;
     var password = req.body.password;
@@ -17,9 +18,9 @@ router.post('/', async (req, res, next) => {
     var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password);
 
     if (data != undefined) {
-      res.redirect('/admin/novedades');
       req.session.id_usuario = data.id; //columna id
       req.session.nombre = data.usuario;
+      res.redirect('/admin/novedades');
     } else {
       res.render('admin/login', {
         layout: 'admin/layout', 
