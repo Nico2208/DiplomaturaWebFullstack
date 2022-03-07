@@ -18,7 +18,10 @@ router.post('/', async (req, res, next) => { //Controlador necesario
     var data = await usuariosModel.getUserByUsernameAndPassword(usuario, password);
 
     if (data != undefined) {
-      req.session.id_usuario = data.id; //columna id
+      req.session.id_usuario = data.id; 
+      //De coincidir los datos ingresados 
+      //en el formulario con los datos en el pool, se generan las variables de sesion
+      //con la informacion del formulario.
       req.session.nombre = data.usuario;
       res.redirect('/admin/novedades');
     } else {
